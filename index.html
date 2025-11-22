@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Date de debut de création du site 18/08/2024 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!--For  PWA  -->
+  <meta name="theme-color" content="#f5f5dc">
+  <meta name="msapplication-navbutton-color" content="#1e1043">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#f5f5dc">
+  <link rel="manifest" href="Favicons/site.webmanifest">
+  <!--=============== Fontawesone-icones ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="styles.css">
+  <title>LIBRAIRIE | ICC-LOME</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header" id="header">
+    <nav class="nav container">
+       <div class="logo">
+                <div class="logoContainer">
+                    <div>
+                        <img src="profil/Logo_Icc.png" alt="">
+                    </div>
+                    <a href="#" class="logo">LIBRAIRIE <br><span>ICC-LOME</span> </a>
+                </div>
+
+            </div>
+      <!-- Barre de recherche -->
+      <form>
+        <input type="text" name="nom" id="" class="recherche" placeholder="Chercher un livre ..." />
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <!-- fin Barre de recherche -->
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">
+              <i class="fa-solid fa-shop nav__icon"></i>
+              <span class="nav__name">Boutique</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <button id="share-btn" class="nav__link" type="button" aria-haspopup="dialog">
+              <i class="fa-solid fa-share-nodes nav__icon"></i>
+              <span class="nav__name">Partager</span>
+            </button>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">
+              <i class="fa-solid fa-info nav__icon"></i>
+              <span class="nav__name">À Propos</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- PWA install banner (hidden by default, shown when available) -->
+  <div id="install-banner" class="install-banner" style="display:none">
+    <div class="install-banner__content">
+      <img src="Favicons/android-chrome-192x192.png" alt="DAMAS" class="install-banner__icon">
+      <div class="install-banner__text">
+        <strong>Installer DAMAS</strong>
+        <div class="install-banner__subtitle">Ajouter l'application à votre écran d'accueil</div>
+      </div>
+    </div>
+    <div class="install-banner__actions">
+      <button id="install-btn" class="install-banner__install-btn btn action">Installer</button>
+      <button id="install-dismiss" class="install-banner__dismiss-btn">✕</button>
+    </div>
+  </div>
+  <main>
+    <!-- articles -->
+    <div class="main-content">
+      <section class="filtre">
+        <div class="breadcumb">
+          <p><i class="fa-solid fa-chevron-right"></i>Boutique </p>
+        </div>
+      </section>
+      <section class="produits"></section>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3>Notre Vision:</h3>
+            <ul>
+              <p>Restauration Transformation Totale.</p>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Notre Position:</h3>
+            <ul>
+              <p>Route de l’aéroport 2ème von après la station NRL, ancien Oando <br>
+                                (von de l’ASAIGE et de l’IFDC) et ensuite première von à gauche.</p>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Pages Social:</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/share/14NpuETmrAb/" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/k.berengen?igsh=cjZrNHFqeGtocXZl" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.tiktok.com/@k.berengen?_r=1&_t=ZM-91YJLlDFmGp" title="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://wa.me/22890381883" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+            </div>
+          </div>
+    </footer>
+    <!-- Boite de dialogue articles -->
+    <dialog class="one-product" id="dialog">
+      <div class="close">
+        <i class="fa-solid fa-times"></i>
+      </div>
+    </dialog>
+    <!-- Dialog de partage -->
+    <dialog id="share-dialog" class="share-dialog" aria-label="Partager le site">
+      <div class="share-header">
+        <h3>Partager</h3>
+        <button class="share-close" aria-label="Fermer">×</button>
+      </div>
+      <div class="share-body">
+        <p>Copier ou partager le lien du site :</p>
+        <div class="share-input-row">
+          <input id="share-url" class="share-input" readonly>
+          <button id="copy-link" class="btn action">Copier</button>
+        </div>
+        <div class="share-buttons">
+          <a id="share-whatsapp-business" class="share-btn whatsapp" target="_blank" rel="noopener"
+            title="Partager sur WhatsApp Business" aria-label="Partager sur WhatsApp Business">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span class="share-label">WhatsApp Bus.</span>
+          </a>
+          <a id="share-whatsapp" class="share-btn whatsapp" target="_blank" rel="noopener" title="Partager sur WhatsApp"
+            aria-label="Partager sur WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span class="share-label">WhatsApp</span>
+          </a>
+          <a id="share-facebook" class="share-btn facebook" target="_blank" rel="noopener" title="Partager sur Facebook"
+            aria-label="Partager sur Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            <span class="share-label">Facebook</span>
+          </a>
+          <a id="share-twitter" class="share-btn twitter" target="_blank" rel="noopener"
+            title="Partager sur X (Twitter)" aria-label="Partager sur X (Twitter)">
+            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+            <span class="share-label">X</span>
+          </a>
+          <a id="share-gmail" class="share-btn gmail" target="_blank" rel="noopener" title="Partager par Gmail"
+            aria-label="Partager par Gmail">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span class="share-label">Gmail</span>
+          </a>
+          <a id="share-instagram" class="share-btn instagram" target="_blank" rel="noopener" title="Ouvrir Instagram"
+            aria-label="Ouvrir Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span class="share-label">Instagram</span>
+          </a>
+          <a id="share-google-keep" class="share-btn google-keep" target="_blank" rel="noopener"
+            title="Ouvrir Google Keep" aria-label="Ouvrir Google Keep">
+            <i class="fa-solid fa-note-sticky" aria-hidden="true"></i>
+            <span class="share-label">Keep</span>
+          </a>
+          <button id="share-screenshot" class="share-btn screenshot" title="Télécharger une capture d'écran"
+            aria-label="Télécharger une capture d'écran">
+            <i class="fa-solid fa-camera" aria-hidden="true"></i>
+            <span class="share-label">Capture</span>
+          </button>
+          <button id="share-qr" class="share-btn qr" title="Télécharger le code QR" aria-label="Télécharger le code QR">
+            <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+            <span class="share-label">QR</span>
+          </button>
+        </div>
+      </div>
+    </dialog>
+  </main>
+  <script type="module" src="index.js"></script>
+  <script type="module">
+    import { initializeShare } from './share.js';
+    initializeShare();
+  </script>
+</body>
+
+</html>
