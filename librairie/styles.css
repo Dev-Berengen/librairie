@@ -272,7 +272,7 @@ main .filtre {
 }
 
 .produits .carte-produit {
-  height: 300px;
+ 
   width: 260px;
   gap: 0.5rem;
   padding: 0.7rem;
@@ -1168,6 +1168,7 @@ footer {
  
   .produits .carte-produit {
   width: 155px;
+  height: 10px;
   gap: 0.5rem;
   padding: 0.7rem;
   border-radius: 15px;
