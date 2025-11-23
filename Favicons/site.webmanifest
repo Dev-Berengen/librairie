@@ -3,9 +3,9 @@
 	"short_name": "ICC-LOME",
 	"description": "Boutique en ligne LIBRAIRIE ICC-LOME — produits et contact",
 	"start_url": "/",
-	"scope": ".",
+	"scope": "/",
 	"display": "standalone",
-	"orientation": "portrait-primary",
+	"orientation": "portrait",
 	"icons": [
 		{
 			"src": "/Favicons/android-chrome-192x192.png",
