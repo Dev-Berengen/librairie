@@ -1,0 +1,82 @@
+{
+	"name": "LIBRAIRIE ICC-LOME",
+	"short_name": "ICC-LOME",
+	"description": "Boutique en ligne LIBRAIRIE ICC-LOME — produits et contact",
+	"start_url": "/",
+	"scope": "/",
+	"display": "standalone",
+	"orientation": "portrait",
+	"icons": [
+		{
+			"src": "/Favicons/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/Favicons/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
+			"src": "/Favicons/favicon-32x32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "/Favicons/favicon-16x16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "/Favicons/apple-touch-icon.png",
+			"sizes": "180x180",
+			"type": "image/png"
+		}
+	],
+	"screenshots": [
+		{
+		"src":"/assets/profile/desktop-1.jpg",
+		"sizes":"1833x823",
+		"type":"image/jpg",
+		"form_factor":"wide",
+		"label":"Wonder Widgets"
+		},
+		{
+		"src":"/assets/profile/desktop-2.jpg",
+		"sizes":"1833x823",
+		"type":"image/jpg",
+		"form_factor":"wide",
+		"label":"Wonder Widgets"
+		},
+		{
+		"src":"/assets/profile/desktop-3.jpg",
+		"sizes":"1833x823",
+		"type":"image/jpg",
+		"formfactor":"wide",
+		"label":"Wonder Widgets"
+		},
+		{
+		"src":"/assets/profile/mobile-1.png",
+		"sizes":"337x749",
+		"type":"image/png",
+		"form_factor":"wide",
+		"label":"Wonder Widgets"
+		},
+		{
+		"src":"/assets/profile/mobile-2.png",
+		"sizes":"337x749",
+		"type":"image/png",
+		"form_factor":"wide",
+		"label":"Wonder Widgets"
+		},
+		{
+		"src":"/assets/profile/mobile-3.png",
+		"sizes":"337x749",
+		"type":"image/png",
+		"form_factor":"wide",
+		"label":"Wonder Widgets"
+		}
+	],
+	"theme_color": "#206141",
+	"background_color": "#f5fbf8"
+}
