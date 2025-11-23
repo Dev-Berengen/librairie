@@ -1,6 +1,6 @@
-const CACHE_NAME = 'damas-cache-v1';
+const CACHE_NAME = 'librarie-icclome-cache-v1';
 const PRECACHE_URLS = [
-//   '/',
+  '/',
   '/index.html',
   '/styles.css',
   '/index.js',
