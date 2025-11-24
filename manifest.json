@@ -35,42 +35,42 @@
 	],
 	"screenshots": [
 		{
-		"src":"/assets/profile/desktop-1.jpg",
+		"src":"./assets/profile/desktop-1.jpg",
 		"sizes":"1833x823",
 		"type":"image/jpg",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
-		"src":"/assets/profile/desktop-2.jpg",
+		"src":"./assets/profile/desktop-2.jpg",
 		"sizes":"1833x823",
 		"type":"image/jpg",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
-		"src":"/assets/profile/desktop-3.jpg",
+		"src":"./assets/profile/desktop-3.jpg",
 		"sizes":"1833x823",
 		"type":"image/jpg",
 		"formfactor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
-		"src":"/assets/profile/mobile-1.png",
+		"src":"./assets/profile/mobile-1.png",
 		"sizes":"337x749",
 		"type":"image/png",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
-		"src":"/assets/profile/mobile-2.png",
+		"src":"./assets/profile/mobile-2.png",
 		"sizes":"337x749",
 		"type":"image/png",
 		"form_factor":"wide",
 		"label":"Wonder Widgets"
 		},
 		{
-		"src":"/assets/profile/mobile-3.png",
+		"src":"./assets/profile/mobile-3.png",
 		"sizes":"337x749",
 		"type":"image/png",
 		"form_factor":"wide",
