@@ -1,8 +1,8 @@
 {
 	"name": "LIBRAIRIE ICC-LOME",
-	"short_name": "ICC-LOME",
+	"short_name": "LIBRAIRIE",
 	"description": "Boutique en ligne LIBRAIRIE ICC-LOME — produits et contact",
-	"start_url": "/",
+	"start_url": "https://dev-berengen.github.io/librairie/",
 	"scope": "/",
 	"display": "standalone",
 	"orientation": "portrait",
