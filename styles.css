@@ -1205,7 +1205,7 @@ footer {
 /* PWA Install Banner */
 .install-banner {
   position: fixed;
-  bottom: 80px;
+  top: 50px;
   left: 16px;
   right: 16px;
   background: #ffffff;
